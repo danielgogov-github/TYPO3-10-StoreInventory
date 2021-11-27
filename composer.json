@@ -1,0 +1,20 @@
+{
+    "name": "t10/store-inventory",
+    "authors": [
+        {
+           "name": "",
+           "role": "Developer"
+        }
+    ],
+    "type": "typo3-cms-extension",
+    "description": "A Store Inventory Example for Programming with Extbase.",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+           "T10\\StoreInventory\\": "Classes/"
+        }
+    },
+    "require": {
+        "typo3/cms-core": ">=10.4 <11.0.0"
+    }
+}
