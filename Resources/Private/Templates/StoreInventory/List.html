@@ -1,17 +1,25 @@
+{namespace core=TYPO3\CMS\Core\ViewHelpers}
+
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 <table border="1" cellspacing="1" cellpadding="5">
     <tr>
+        <td>Icon</td>
         <td>Product name</td>
         <td>Product description</td>
         <td>Quantity</td>
     </tr>
     <f:for each="{products}" as="product">
         <tr>
+            <td>
+                <core:icon identifier="storeInventory-cart" size="small" />
+            </td>
             <td align="top">{product.name}</td>
             <td align="top">
                 <f:format.crop maxCharacters="100">{product.description}</f:format.crop>
             </td>
-            <td align="top">{product.quantity}</td>
+            <td class="text-center" align="top">
+                {product.quantity}
+            </td>
         </tr>
     </f:for>
 </table>
