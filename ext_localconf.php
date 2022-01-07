@@ -23,6 +23,6 @@ foreach ($iconsStoreInventory as $identifier => $icon) {
     $iconRegistry->registerIcon(
         $identifier, // $identifier
         \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class, // $iconProviderClassName
-        ['source' => 'EXT:days_laravel/Resources/Public/Icons/'. $icon], // array $options
+        ['source' => 'EXT:store_inventory/Resources/Public/Icons/'. $icon], // array $options
     );
 }
